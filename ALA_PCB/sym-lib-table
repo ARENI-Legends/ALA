@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Teensy)(type Legacy)(uri ${KIPRJMOD}/teensy_library/teensy.lib)(options "")(descr ""))
+  (lib (name MotorDriver)(type Legacy)(uri ${KIPRJMOD}/motor_driver_library/motor_driver.lib)(options "")(descr ""))
 )
