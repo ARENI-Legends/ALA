@@ -1,0 +1,9 @@
+[submodule "ALA_PCB/ALA_PCB/teensy.pretty"]
+	path = ALA_PCB/ALA_PCB/teensy.pretty
+	url = https://github.com/XenGi/teensy.pretty
+[submodule "ALA_PCB/teensy.pretty"]
+	path = ALA_PCB/teensy.pretty
+	url = https://github.com/XenGi/teensy.pretty
+[submodule "ALA_PCB/teensy_library"]
+	path = ALA_PCB/teensy_library
+	url = https://github.com/XenGi/teensy_library
