@@ -240,8 +240,6 @@ Wire Wire Line
 	5350 1500 5250 1500
 Wire Wire Line
 	5250 1650 5350 1650
-Text Label 6450 1350 0    50   ~ 0
-M_VIN
 Wire Wire Line
 	6450 1350 6350 1350
 $Comp
@@ -447,7 +445,7 @@ Wire Wire Line
 	5700 2450 5750 2450
 Text HLabel 5700 3450 0    50   Input ~ 0
 M_3V3
-Text HLabel 6000 2350 2    50   Input ~ 0
+Text HLabel 6000 2350 2    50   Output ~ 0
 M_3V3
 Text HLabel 3600 1200 2    50   Input ~ 0
 M_3V3
@@ -605,4 +603,6 @@ Wire Notes Line
 	3800 3900 3800 4900
 Wire Notes Line
 	3800 4900 1950 4900
+Text HLabel 6450 1350 2    50   Input ~ 0
+M_VIN
 $EndSCHEMATC

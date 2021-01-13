@@ -291,9 +291,10 @@ F4 "DIR" I R 2800 2100 50
 F5 "Command_GND" I L 1800 2000 50 
 F6 "Command_VCC" I L 1800 2100 50 
 F7 "M_GND" I L 1800 2300 50 
-F8 "M_3V3" I L 1800 2400 50 
+F8 "M_3V3" O L 1800 2400 50 
 F9 "M_SLP" I R 2800 2500 50 
 F10 "M_FLT" O R 2800 2600 50 
+F11 "M_VIN" I L 1800 2500 50 
 $EndSheet
 Text HLabel 1700 2100 0    50   Input ~ 0
 Command_VCC
@@ -308,15 +309,11 @@ Wire Wire Line
 Wire Wire Line
 	1700 2300 1800 2300
 Wire Wire Line
-	1700 2400 1800 2400
-Wire Wire Line
 	2800 2000 2900 2000
 Wire Wire Line
 	2800 2100 2900 2100
 Wire Wire Line
 	2800 2300 2900 2300
-Text Label 1700 2400 2    50   ~ 0
-M1_3V3
 Text HLabel 5400 1250 2    50   Output ~ 0
 CS2
 Text HLabel 5400 950  2    50   Input ~ 0
@@ -334,9 +331,10 @@ F4 "DIR" I R 5300 1050 50
 F5 "Command_GND" I L 4300 950 50 
 F6 "Command_VCC" I L 4300 1050 50 
 F7 "M_GND" I L 4300 1250 50 
-F8 "M_3V3" I L 4300 1350 50 
+F8 "M_3V3" O L 4300 1350 50 
 F9 "M_SLP" I R 5300 1450 50 
 F10 "M_FLT" O R 5300 1550 50 
+F11 "M_VIN" I L 4300 1450 50 
 $EndSheet
 Text HLabel 4200 1050 0    50   Input ~ 0
 Command_VCC
@@ -351,15 +349,11 @@ Wire Wire Line
 Wire Wire Line
 	4200 1250 4300 1250
 Wire Wire Line
-	4200 1350 4300 1350
-Wire Wire Line
 	5300 950  5400 950 
 Wire Wire Line
 	5300 1050 5400 1050
 Wire Wire Line
 	5300 1250 5400 1250
-Text Label 4200 1350 2    50   ~ 0
-M2_3V3
 Text HLabel 5400 2300 2    50   Output ~ 0
 CS3
 Text HLabel 5400 2000 2    50   Input ~ 0
@@ -377,9 +371,10 @@ F4 "DIR" I R 5300 2100 50
 F5 "Command_GND" I L 4300 2000 50 
 F6 "Command_VCC" I L 4300 2100 50 
 F7 "M_GND" I L 4300 2300 50 
-F8 "M_3V3" I L 4300 2400 50 
+F8 "M_3V3" O L 4300 2400 50 
 F9 "M_SLP" I R 5300 2500 50 
 F10 "M_FLT" O R 5300 2600 50 
+F11 "M_VIN" I L 4300 2500 50 
 $EndSheet
 Text HLabel 4200 2100 0    50   Input ~ 0
 Command_VCC
@@ -394,15 +389,11 @@ Wire Wire Line
 Wire Wire Line
 	4200 2300 4300 2300
 Wire Wire Line
-	4200 2400 4300 2400
-Wire Wire Line
 	5300 2000 5400 2000
 Wire Wire Line
 	5300 2100 5400 2100
 Wire Wire Line
 	5300 2300 5400 2300
-Text Label 4200 2400 2    50   ~ 0
-M3_3V3
 Text HLabel 2600 3850 2    50   Input ~ 0
 Command_VCC
 Text HLabel 1850 5150 0    50   Input ~ 0
@@ -440,9 +431,10 @@ F4 "DIR" I R 2800 1050 50
 F5 "Command_GND" I L 1800 950 50 
 F6 "Command_VCC" I L 1800 1050 50 
 F7 "M_GND" I L 1800 1250 50 
-F8 "M_3V3" I L 1800 1350 50 
+F8 "M_3V3" O L 1800 1350 50 
 F9 "M_SLP" I R 2800 1450 50 
 F10 "M_FLT" O R 2800 1550 50 
+F11 "M_VIN" I L 1800 1450 50 
 $EndSheet
 Text Label 2900 1550 0    50   ~ 0
 M_FLT
@@ -514,4 +506,23 @@ Wire Wire Line
 	7800 950  7700 950 
 Text HLabel 6850 950  0    50   Input ~ 0
 Command_GND
+NoConn ~ 1800 2400
+NoConn ~ 4300 1350
+NoConn ~ 4300 2400
+Text Label 1700 1450 2    50   ~ 0
+M0_VIN
+Wire Wire Line
+	1700 1450 1800 1450
+Text Label 1700 2500 2    50   ~ 0
+M1_VIN
+Wire Wire Line
+	1700 2500 1800 2500
+Text Label 4200 1450 2    50   ~ 0
+M2_VIN
+Wire Wire Line
+	4200 1450 4300 1450
+Text Label 4200 2500 2    50   ~ 0
+M3_VIN
+Wire Wire Line
+	4200 2500 4300 2500
 $EndSCHEMATC
