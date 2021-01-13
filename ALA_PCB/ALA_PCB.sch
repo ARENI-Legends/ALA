@@ -563,6 +563,14 @@ F 3 "~" H 5800 7050 50  0001 C CNN
 	1    5800 7050
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	4600 2050 4450 2050
+Wire Wire Line
+	4600 2150 4450 2150
+Text Label 4600 2050 0    50   ~ 0
+CAN_RX_1
+Text Label 4600 2150 0    50   ~ 0
+CAN_TX_1
 $Comp
 L Device:R R44
 U 1 1 600358C3
