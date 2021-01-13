@@ -485,8 +485,8 @@ Wire Wire Line
 	7400 950  7300 950 
 Wire Wire Line
 	7000 950  6850 950 
-Text Notes 6950 1150 0    50   ~ 0
-Driver Fault
+Text Notes 6950 1250 0    50   ~ 0
+Driver Fault\nON when a fault occured
 $Comp
 L Device:R R?
 U 1 1 6005D4DB
@@ -582,4 +582,42 @@ Text Label 4200 2500 2    50   ~ 0
 M3_VIN
 Wire Wire Line
 	4200 2500 4300 2500
+$Comp
+L Device:LED D?
+U 1 1 6012EA9A
+P 7150 1550
+AR Path="/6012EA9A" Ref="D?"  Part="1" 
+AR Path="/5FD98CA6/6012EA9A" Ref="D12"  Part="1" 
+F 0 "D12" H 7143 1767 50  0000 C CNN
+F 1 "RED LED" H 7143 1676 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7150 1550 50  0001 C CNN
+F 3 "~" H 7150 1550 50  0001 C CNN
+	1    7150 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1550 7300 1550
+Wire Wire Line
+	7000 1550 6850 1550
+Text Notes 6950 1850 0    50   ~ 0
+Driver Sleep\nON when drivers are in sleep mode
+$Comp
+L Device:R R?
+U 1 1 6012EAA3
+P 7550 1550
+AR Path="/6012EAA3" Ref="R?"  Part="1" 
+AR Path="/5FD98CA6/6012EAA3" Ref="R55"  Part="1" 
+F 0 "R55" V 7343 1550 50  0000 C CNN
+F 1 "75" V 7434 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7480 1550 50  0001 C CNN
+F 3 "~" H 7550 1550 50  0001 C CNN
+	1    7550 1550
+	0    1    1    0   
+$EndComp
+Text HLabel 7800 1550 2    50   Input ~ 0
+SLP
+Wire Wire Line
+	7800 1550 7700 1550
+Text HLabel 6850 1550 0    50   Input ~ 0
+Command_GND
 $EndSCHEMATC
