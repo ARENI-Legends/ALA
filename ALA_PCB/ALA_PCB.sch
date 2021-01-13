@@ -35,21 +35,8 @@ F 3 "" H 4550 1850 50  0001 C CNN
 	1    4550 1850
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GNDS #PWR01
-U 1 1 5FD097B8
-P 2150 1750
-F 0 "#PWR01" H 2150 1500 50  0001 C CNN
-F 1 "GNDS" V 2155 1622 50  0000 R CNN
-F 2 "" H 2150 1750 50  0001 C CNN
-F 3 "" H 2150 1750 50  0001 C CNN
-	1    2150 1750
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4450 1850 4550 1850
-Wire Wire Line
-	2250 1750 2150 1750
 $Comp
 L power:GNDS #PWR04
 U 1 1 5FD125BF
@@ -291,7 +278,7 @@ Text Label 2100 2750 2    50   ~ 0
 DIR1
 Text Label 2100 2950 2    50   ~ 0
 DIR2
-Text Label 2100 4050 2    50   ~ 0
+Text Label 2100 3650 2    50   ~ 0
 DIR3
 Wire Wire Line
 	2100 2850 2250 2850
@@ -300,9 +287,8 @@ Wire Wire Line
 Wire Wire Line
 	2100 3050 2250 3050
 Wire Wire Line
-	2100 4050 2250 4050
+	2100 3650 2250 3650
 NoConn ~ 4450 1750
-NoConn ~ 4450 1950
 Wire Wire Line
 	2100 3850 2250 3850
 Wire Wire Line
@@ -601,4 +587,38 @@ F 3 "~" H 2250 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4450 3050
+Text Label 2250 6250 0    50   ~ 0
+FLT
+Wire Wire Line
+	2100 3750 2250 3750
+Text Label 2100 3750 2    50   ~ 0
+SLP
+Wire Wire Line
+	2100 4050 2250 4050
+Text Label 2100 4050 2    50   ~ 0
+FLT
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 600D28EA
+P 5800 6950
+F 0 "#PWR0106" H 5800 6800 50  0001 C CNN
+F 1 "+3V3" H 5815 7123 50  0000 C CNN
+F 2 "" H 5800 6950 50  0001 C CNN
+F 3 "" H 5800 6950 50  0001 C CNN
+	1    5800 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6950 5800 7050
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 600D4D81
+P 5800 7050
+F 0 "#FLG0101" H 5800 7125 50  0001 C CNN
+F 1 "PWR_FLAG" H 5800 7223 50  0000 C CNN
+F 2 "" H 5800 7050 50  0001 C CNN
+F 3 "~" H 5800 7050 50  0001 C CNN
+	1    5800 7050
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
