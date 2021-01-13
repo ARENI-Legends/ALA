@@ -118,37 +118,37 @@ Wire Wire Line
 	2150 3150 2250 3150
 NoConn ~ 4450 1600
 Text Label 10600 2900 0    50   ~ 0
-E1_A
+E0_A
 Text Label 10600 3000 0    50   ~ 0
-E1_B
+E0_B
 Text Label 10600 3700 0    50   ~ 0
-E2_A
-Text Label 10600 3800 0    50   ~ 0
-E2_B
-Text Label 10600 4650 0    50   ~ 0
-E3_A
-Text Label 10600 4750 0    50   ~ 0
-E3_B
-Text Label 10600 5550 0    50   ~ 0
-E4_A
-Text Label 10600 5650 0    50   ~ 0
-E4_B
-Text Label 2100 1850 2    50   ~ 0
 E1_A
-Text Label 2100 1950 2    50   ~ 0
+Text Label 10600 3800 0    50   ~ 0
 E1_B
-Text Label 2100 2050 2    50   ~ 0
+Text Label 10600 4650 0    50   ~ 0
 E2_A
-Text Label 2100 2150 2    50   ~ 0
+Text Label 10600 4750 0    50   ~ 0
 E2_B
-Text Label 2100 2250 2    50   ~ 0
+Text Label 10600 5550 0    50   ~ 0
 E3_A
-Text Label 2100 2550 2    50   ~ 0
+Text Label 10600 5650 0    50   ~ 0
 E3_B
+Text Label 2100 1850 2    50   ~ 0
+E0_A
+Text Label 2100 1950 2    50   ~ 0
+E0_B
+Text Label 2100 2050 2    50   ~ 0
+E1_A
+Text Label 2100 2150 2    50   ~ 0
+E1_B
+Text Label 2100 2250 2    50   ~ 0
+E2_A
+Text Label 2100 2550 2    50   ~ 0
+E2_B
 Text Label 4600 4050 0    50   ~ 0
-E4_A
+E3_A
 Text Label 4600 3750 0    50   ~ 0
-E4_B
+E3_B
 Wire Wire Line
 	2100 1850 2250 1850
 Wire Wire Line
@@ -330,7 +330,7 @@ CS3
 $Sheet
 S 9600 2650 900  600 
 U 60071F36
-F0 "Encoder 1" 50
+F0 "Encoder 0" 50
 F1 "Encoder.sch" 50
 F2 "Enc_GND" I L 9600 2750 50 
 F3 "Enc_VCC" I L 9600 2850 50 
@@ -342,7 +342,7 @@ $EndSheet
 $Sheet
 S 9600 3450 900  600 
 U 60071F3E
-F0 "Encoder 2" 50
+F0 "Encoder 1" 50
 F1 "Encoder.sch" 50
 F2 "Enc_GND" I L 9600 3550 50 
 F3 "Enc_VCC" I L 9600 3650 50 
@@ -354,7 +354,7 @@ $EndSheet
 $Sheet
 S 9600 4400 900  600 
 U 60071F46
-F0 "Encoder 3" 50
+F0 "Encoder 2" 50
 F1 "Encoder.sch" 50
 F2 "Enc_GND" I L 9600 4500 50 
 F3 "Enc_VCC" I L 9600 4600 50 
@@ -366,7 +366,7 @@ $EndSheet
 $Sheet
 S 9600 5300 900  600 
 U 60071F4E
-F0 "Encoder 4" 50
+F0 "Encoder 3" 50
 F1 "Encoder.sch" 50
 F2 "Enc_GND" I L 9600 5400 50 
 F3 "Enc_VCC" I L 9600 5500 50 
