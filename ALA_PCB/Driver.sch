@@ -507,4 +507,102 @@ Text HLabel 5250 1650 0    50   Input ~ 0
 M_SLP
 Text HLabel 5250 1800 0    50   Output ~ 0
 M_FLT
+$Comp
+L Device:LED D?
+U 1 1 60084D5F
+P 2900 4200
+AR Path="/60084D5F" Ref="D?"  Part="1" 
+AR Path="/5FD98CA6/60084D5F" Ref="D?"  Part="1" 
+AR Path="/5FD98CA6/60458F83/60084D5F" Ref="D4"  Part="1" 
+AR Path="/5FD98CA6/604FEE4D/60084D5F" Ref="D6"  Part="1" 
+AR Path="/5FD98CA6/6050B299/60084D5F" Ref="D8"  Part="1" 
+AR Path="/5FD98CA6/601029E8/60084D5F" Ref="D10"  Part="1" 
+F 0 "D10" H 2893 4417 50  0000 C CNN
+F 1 "YELLOW LED" H 2893 4326 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 4200 50  0001 C CNN
+F 3 "~" H 2900 4200 50  0001 C CNN
+	1    2900 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4200 3050 4200
+Wire Wire Line
+	2750 4200 2600 4200
+$Comp
+L Device:R R?
+U 1 1 60084D67
+P 3300 4200
+AR Path="/60084D67" Ref="R?"  Part="1" 
+AR Path="/5FD98CA6/60084D67" Ref="R?"  Part="1" 
+AR Path="/5FD98CA6/60458F83/60084D67" Ref="R47"  Part="1" 
+AR Path="/5FD98CA6/604FEE4D/60084D67" Ref="R49"  Part="1" 
+AR Path="/5FD98CA6/6050B299/60084D67" Ref="R51"  Part="1" 
+AR Path="/5FD98CA6/601029E8/60084D67" Ref="R53"  Part="1" 
+F 0 "R53" V 3093 4200 50  0000 C CNN
+F 1 "75" V 3184 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3230 4200 50  0001 C CNN
+F 3 "~" H 3300 4200 50  0001 C CNN
+	1    3300 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 4200 3450 4200
+Text HLabel 2600 4200 0    50   Input ~ 0
+Command_GND
+Text HLabel 3550 4200 2    50   Input ~ 0
+PWM
+$Comp
+L Device:LED D?
+U 1 1 600947B1
+P 2900 4650
+AR Path="/600947B1" Ref="D?"  Part="1" 
+AR Path="/5FD98CA6/600947B1" Ref="D?"  Part="1" 
+AR Path="/5FD98CA6/60458F83/600947B1" Ref="D5"  Part="1" 
+AR Path="/5FD98CA6/604FEE4D/600947B1" Ref="D7"  Part="1" 
+AR Path="/5FD98CA6/6050B299/600947B1" Ref="D9"  Part="1" 
+AR Path="/5FD98CA6/601029E8/600947B1" Ref="D11"  Part="1" 
+F 0 "D11" H 2893 4867 50  0000 C CNN
+F 1 "YELLOW LED" H 2893 4776 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 4650 50  0001 C CNN
+F 3 "~" H 2900 4650 50  0001 C CNN
+	1    2900 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4650 3050 4650
+Wire Wire Line
+	2750 4650 2600 4650
+$Comp
+L Device:R R?
+U 1 1 600947B9
+P 3300 4650
+AR Path="/600947B9" Ref="R?"  Part="1" 
+AR Path="/5FD98CA6/600947B9" Ref="R?"  Part="1" 
+AR Path="/5FD98CA6/60458F83/600947B9" Ref="R48"  Part="1" 
+AR Path="/5FD98CA6/604FEE4D/600947B9" Ref="R50"  Part="1" 
+AR Path="/5FD98CA6/6050B299/600947B9" Ref="R52"  Part="1" 
+AR Path="/5FD98CA6/601029E8/600947B9" Ref="R54"  Part="1" 
+F 0 "R54" V 3093 4650 50  0000 C CNN
+F 1 "75" V 3184 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3230 4650 50  0001 C CNN
+F 3 "~" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 4650 3450 4650
+Text HLabel 2600 4650 0    50   Input ~ 0
+Command_GND
+Text HLabel 3550 4650 2    50   Input ~ 0
+DIR
+Text Notes 2500 4850 0    50   ~ 0
+Driver commands LEDs
+Wire Notes Line
+	1950 4900 1950 3900
+Wire Notes Line
+	1950 3900 3800 3900
+Wire Notes Line
+	3800 3900 3800 4900
+Wire Notes Line
+	3800 4900 1950 4900
 $EndSCHEMATC

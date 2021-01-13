@@ -476,4 +476,42 @@ Wire Wire Line
 	5300 2500 5400 2500
 Wire Wire Line
 	5300 2600 5400 2600
+$Comp
+L Device:LED D?
+U 1 1 6005D4C9
+P 7150 950
+AR Path="/6005D4C9" Ref="D?"  Part="1" 
+AR Path="/5FD98CA6/6005D4C9" Ref="D3"  Part="1" 
+F 0 "D3" H 7143 1167 50  0000 C CNN
+F 1 "RED LED" H 7143 1076 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7150 950 50  0001 C CNN
+F 3 "~" H 7150 950 50  0001 C CNN
+	1    7150 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 950  7300 950 
+Wire Wire Line
+	7000 950  6850 950 
+Text Notes 6950 1150 0    50   ~ 0
+Driver Fault
+$Comp
+L Device:R R?
+U 1 1 6005D4DB
+P 7550 950
+AR Path="/6005D4DB" Ref="R?"  Part="1" 
+AR Path="/5FD98CA6/6005D4DB" Ref="R46"  Part="1" 
+F 0 "R46" V 7343 950 50  0000 C CNN
+F 1 "75" V 7434 950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7480 950 50  0001 C CNN
+F 3 "~" H 7550 950 50  0001 C CNN
+	1    7550 950 
+	0    1    1    0   
+$EndComp
+Text HLabel 7800 950  2    50   Output ~ 0
+FLT
+Wire Wire Line
+	7800 950  7700 950 
+Text HLabel 6850 950  0    50   Input ~ 0
+Command_GND
 $EndSCHEMATC
