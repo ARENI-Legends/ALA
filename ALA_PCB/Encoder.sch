@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 10
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Sheet 7 12
+Title "Encodeur"
+Date "2021-01-14"
+Rev "0.0.1"
+Comp "ARENI-Legends"
+Comment1 "Made by Nils Van Zuijlen"
 Comment2 ""
 Comment3 ""
 Comment4 ""

@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 12
 Title "ALA"
-Date "2020-12-04"
+Date "2021-01-14"
 Rev "0.0.1"
 Comp "ARENI-Legends"
-Comment1 "By Nils"
+Comment1 "Made by Nils Van Zuijlen"
 Comment2 ""
 Comment3 ""
 Comment4 ""
