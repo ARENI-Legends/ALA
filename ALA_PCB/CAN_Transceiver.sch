@@ -225,4 +225,8 @@ Text HLabel 3350 3350 0    50   Input ~ 0
 device_VCC
 Wire Wire Line
 	3350 3350 3500 3350
+Text Label 4450 2950 0    50   ~ 0
+C_TX
+Text Label 4450 3100 0    50   ~ 0
+C_RX
 $EndSCHEMATC
