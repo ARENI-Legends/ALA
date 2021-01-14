@@ -26,12 +26,10 @@ F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 5450 3200 50 
 	1    5450 3200
 	1    0    0    -1  
 $EndComp
-Text HLabel 3000 2600 0    50   Input ~ 0
+Text HLabel 3350 2950 0    50   Input ~ 0
 TX
-Text HLabel 2350 3250 0    50   Input ~ 0
+Text HLabel 3350 3150 0    50   Input ~ 0
 RX
-Wire Wire Line
-	3000 2600 3100 2600
 Text HLabel 5450 3650 3    50   UnSpc ~ 0
 GND
 Wire Wire Line
@@ -94,8 +92,6 @@ Wire Wire Line
 	7150 3300 7200 3300
 Wire Wire Line
 	7100 3400 7200 3400
-Text HLabel 2400 2950 0    50   Input ~ 0
-device_VCC
 Wire Wire Line
 	5150 2800 5450 2800
 $Comp
@@ -155,159 +151,13 @@ Text HLabel 4800 3800 3    50   UnSpc ~ 0
 GND
 Wire Wire Line
 	4800 3800 4800 3750
-$Comp
-L Isolator:ILD74 U?
-U 1 1 6023722B
-P 3400 2700
-AR Path="/5FC9F3F2/6023722B" Ref="U?"  Part="1" 
-AR Path="/5FC9F3F2/5FFCCEBE/6023722B" Ref="U?"  Part="1" 
-AR Path="/5FC9F3F2/5FFDC096/6023722B" Ref="U?"  Part="1" 
-AR Path="/5FC9F3F2/5FFDEA9B/6023722B" Ref="U?"  Part="1" 
-AR Path="/5FC9F3F2/5FFE8F3B/6023722B" Ref="U?"  Part="1" 
-AR Path="/60071F36/6023722B" Ref="U?"  Part="1" 
-AR Path="/60071F3E/6023722B" Ref="U?"  Part="1" 
-AR Path="/60071F46/6023722B" Ref="U?"  Part="1" 
-AR Path="/60071F4E/6023722B" Ref="U?"  Part="1" 
-AR Path="/601F49DE/6023722B" Ref="U21"  Part="1" 
-AR Path="/60205E48/6023722B" Ref="U22"  Part="1" 
-F 0 "U21" H 3400 3025 50  0000 C CNN
-F 1 "ILD74" H 3400 2934 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3200 2500 50  0001 L CIN
-F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 3400 2700 50  0001 L CNN
-	1    3400 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Isolator:ILD74 U?
-U 2 1 60237231
-P 3400 3150
-AR Path="/5FC9F3F2/60237231" Ref="U?"  Part="2" 
-AR Path="/5FC9F3F2/5FFCCEBE/60237231" Ref="U?"  Part="2" 
-AR Path="/5FC9F3F2/5FFDC096/60237231" Ref="U?"  Part="2" 
-AR Path="/5FC9F3F2/5FFDEA9B/60237231" Ref="U?"  Part="2" 
-AR Path="/5FC9F3F2/5FFE8F3B/60237231" Ref="U?"  Part="2" 
-AR Path="/60071F36/60237231" Ref="U?"  Part="2" 
-AR Path="/60071F3E/60237231" Ref="U?"  Part="2" 
-AR Path="/60071F46/60237231" Ref="U?"  Part="2" 
-AR Path="/60071F4E/60237231" Ref="U?"  Part="2" 
-AR Path="/601F49DE/60237231" Ref="U21"  Part="2" 
-AR Path="/60205E48/60237231" Ref="U22"  Part="2" 
-F 0 "U21" H 3400 3475 50  0000 C CNN
-F 1 "ILD74" H 3400 3384 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3200 2950 50  0001 L CIN
-F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 3400 3150 50  0001 L CNN
-	2    3400 3150
-	-1   0    0    1   
-$EndComp
-Text HLabel 4100 3050 2    50   UnSpc ~ 0
-GND
-Text HLabel 2550 2800 0    50   UnSpc ~ 0
-GND
 Text HLabel 5150 2800 0    50   Output ~ 0
 CAN_VCC
-$Comp
-L Device:R_Small R60
-U 1 1 60263952
-P 2750 2800
-AR Path="/601F49DE/60263952" Ref="R60"  Part="1" 
-AR Path="/60205E48/60263952" Ref="R64"  Part="1" 
-F 0 "R60" V 2554 2800 50  0000 C CNN
-F 1 "R_Small" V 2645 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2750 2800 50  0001 C CNN
-F 3 "~" H 2750 2800 50  0001 C CNN
-	1    2750 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2550 2800 2650 2800
-Wire Wire Line
-	2850 2800 3100 2800
-$Comp
-L Device:R_Small R61
-U 1 1 60265D41
-P 3900 3050
-AR Path="/601F49DE/60265D41" Ref="R61"  Part="1" 
-AR Path="/60205E48/60265D41" Ref="R65"  Part="1" 
-F 0 "R61" V 3704 3050 50  0000 C CNN
-F 1 "R_Small" V 3795 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3900 3050 50  0001 C CNN
-F 3 "~" H 3900 3050 50  0001 C CNN
-	1    3900 3050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4100 3050 4000 3050
-Wire Wire Line
-	3800 3050 3700 3050
-Text HLabel 3000 3050 0    50   UnSpc ~ 0
-GND
-Wire Wire Line
-	3000 3050 3100 3050
-Text HLabel 3800 2600 2    50   Output ~ 0
-CAN_VCC
-Wire Wire Line
-	3800 2600 3700 2600
-Wire Wire Line
-	3700 3250 4450 3250
-Wire Wire Line
-	4450 3250 4450 3100
-Wire Wire Line
-	3700 2800 4250 2800
-Wire Wire Line
-	4450 2800 4450 3000
-$Comp
-L Device:R_Small R62
-U 1 1 60275580
-P 4250 2650
-AR Path="/601F49DE/60275580" Ref="R62"  Part="1" 
-AR Path="/60205E48/60275580" Ref="R66"  Part="1" 
-F 0 "R62" H 4309 2696 50  0000 L CNN
-F 1 "R_Small" H 4309 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4250 2650 50  0001 C CNN
-F 3 "~" H 4250 2650 50  0001 C CNN
-	1    4250 2650
-	1    0    0    -1  
-$EndComp
-Connection ~ 4250 2800
-Wire Wire Line
-	4250 2800 4450 2800
-Wire Wire Line
-	4250 2750 4250 2800
-Wire Wire Line
-	4250 2550 4250 2500
-Text HLabel 4300 2500 2    50   UnSpc ~ 0
-GND
-Wire Wire Line
-	4300 2500 4250 2500
-$Comp
-L Device:R_Small R59
-U 1 1 6027E32A
-P 2450 3100
-AR Path="/601F49DE/6027E32A" Ref="R59"  Part="1" 
-AR Path="/60205E48/6027E32A" Ref="R63"  Part="1" 
-F 0 "R59" H 2509 3146 50  0000 L CNN
-F 1 "R_Small" H 2509 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2450 3100 50  0001 C CNN
-F 3 "~" H 2450 3100 50  0001 C CNN
-	1    2450 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 2950 2450 2950
-Wire Wire Line
-	2450 2950 2450 3000
-Wire Wire Line
-	2350 3250 2450 3250
-Wire Wire Line
-	2450 3200 2450 3250
-Connection ~ 2450 3250
-Wire Wire Line
-	2450 3250 3100 3250
 Wire Wire Line
 	4450 3000 4950 3000
 Wire Wire Line
 	4450 3100 4950 3100
-Text Notes 3750 3600 2    50   ~ 0
+Text Notes 4250 3850 2    50   ~ 0
 Voltage level adjust
 Text HLabel 6200 1950 0    50   Output ~ 0
 CAN_VCC
@@ -317,7 +167,7 @@ U 1 1 602A1B79
 P 6250 1900
 AR Path="/601F49DE/602A1B79" Ref="#FLG0106"  Part="1" 
 AR Path="/60205E48/602A1B79" Ref="#FLG0107"  Part="1" 
-F 0 "#FLG0107" H 6250 1975 50  0001 C CNN
+F 0 "#FLG0106" H 6250 1975 50  0001 C CNN
 F 1 "PWR_FLAG" H 6250 2073 50  0000 C CNN
 F 2 "" H 6250 1900 50  0001 C CNN
 F 3 "~" H 6250 1900 50  0001 C CNN
@@ -328,4 +178,51 @@ Wire Wire Line
 	6250 1900 6250 1950
 Wire Wire Line
 	6250 1950 6200 1950
+$Comp
+L Logic_LevelTranslator:TXB0102DCT U21
+U 1 1 602F2CA1
+P 3900 3050
+AR Path="/601F49DE/602F2CA1" Ref="U21"  Part="1" 
+AR Path="/60205E48/602F2CA1" Ref="U22"  Part="1" 
+F 0 "U21" H 3900 2461 50  0000 C CNN
+F 1 "TXB0102DCT" H 3900 2370 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 3900 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0102.pdf" H 3900 3020 50  0001 C CNN
+	1    3900 3050
+	1    0    0    -1  
+$EndComp
+Text HLabel 4000 3600 2    50   UnSpc ~ 0
+GND
+Wire Wire Line
+	3900 3600 3900 3550
+Wire Wire Line
+	3900 3600 4000 3600
+Text HLabel 4050 2500 2    50   Output ~ 0
+CAN_VCC
+Wire Wire Line
+	4050 2500 4000 2500
+Wire Wire Line
+	4000 2500 4000 2550
+Text HLabel 3750 2500 0    50   Input ~ 0
+device_VCC
+Wire Wire Line
+	3750 2500 3800 2500
+Wire Wire Line
+	3800 2500 3800 2550
+Wire Wire Line
+	3350 2950 3500 2950
+Wire Wire Line
+	3500 3150 3350 3150
+Wire Wire Line
+	4300 2950 4450 2950
+Wire Wire Line
+	4450 2950 4450 3000
+Wire Wire Line
+	4450 3150 4300 3150
+Wire Wire Line
+	4450 3150 4450 3100
+Text HLabel 3350 3350 0    50   Input ~ 0
+device_VCC
+Wire Wire Line
+	3350 3350 3500 3350
 $EndSCHEMATC
