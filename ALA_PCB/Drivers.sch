@@ -514,4 +514,126 @@ Wire Wire Line
 	7800 1550 7700 1550
 Text HLabel 6850 1550 0    50   Input ~ 0
 Command_GND
+$Comp
+L Device:LED D?
+U 1 1 6043E026
+P 9150 950
+AR Path="/6043E026" Ref="D?"  Part="1" 
+AR Path="/5FD98CA6/6043E026" Ref="D2"  Part="1" 
+F 0 "D2" H 9143 1167 50  0000 C CNN
+F 1 "GREEN LED" H 9143 1076 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9150 950 50  0001 C CNN
+F 3 "~" H 9150 950 50  0001 C CNN
+	1    9150 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 950  9300 950 
+Wire Wire Line
+	9000 950  8850 950 
+Text Notes 8950 1150 0    50   ~ 0
+M0 Power
+$Comp
+L Device:R R?
+U 1 1 6043E02F
+P 9550 950
+AR Path="/6043E02F" Ref="R?"  Part="1" 
+AR Path="/5FD98CA6/6043E02F" Ref="R17"  Part="1" 
+F 0 "R17" V 9343 950 50  0000 C CNN
+F 1 "56" V 9434 950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9480 950 50  0001 C CNN
+F 3 "~" H 9550 950 50  0001 C CNN
+	1    9550 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 950  9700 950 
+$Comp
+L Device:LED D?
+U 1 1 60440172
+P 9150 1450
+AR Path="/60440172" Ref="D?"  Part="1" 
+AR Path="/5FD98CA6/60440172" Ref="D10"  Part="1" 
+F 0 "D10" H 9143 1667 50  0000 C CNN
+F 1 "GREEN LED" H 9143 1576 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9150 1450 50  0001 C CNN
+F 3 "~" H 9150 1450 50  0001 C CNN
+	1    9150 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1450 9300 1450
+Wire Wire Line
+	9000 1450 8850 1450
+Text Notes 8950 1650 0    50   ~ 0
+M1 Power
+$Comp
+L Device:R R?
+U 1 1 6044017B
+P 9550 1450
+AR Path="/6044017B" Ref="R?"  Part="1" 
+AR Path="/5FD98CA6/6044017B" Ref="R18"  Part="1" 
+F 0 "R18" V 9343 1450 50  0000 C CNN
+F 1 "56" V 9434 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9480 1450 50  0001 C CNN
+F 3 "~" H 9550 1450 50  0001 C CNN
+	1    9550 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 1450 9700 1450
+Text Label 8850 950  2    50   ~ 0
+M_GND
+Text Label 8850 1450 2    50   ~ 0
+M_GND
+Text Label 1700 2400 2    50   ~ 0
+M1_3V3
+Wire Wire Line
+	1700 2400 1800 2400
+Text Label 4200 1350 2    50   ~ 0
+M2_3V3
+Wire Wire Line
+	4200 1350 4300 1350
+Text Label 9800 950  0    50   ~ 0
+M0_3V3
+Text Label 9800 1450 0    50   ~ 0
+M1_3V3
+$Comp
+L Device:LED D?
+U 1 1 604608E0
+P 9150 1950
+AR Path="/604608E0" Ref="D?"  Part="1" 
+AR Path="/5FD98CA6/604608E0" Ref="D11"  Part="1" 
+F 0 "D11" H 9143 2167 50  0000 C CNN
+F 1 "GREEN LED" H 9143 2076 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9150 1950 50  0001 C CNN
+F 3 "~" H 9150 1950 50  0001 C CNN
+	1    9150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1950 9300 1950
+Wire Wire Line
+	9000 1950 8850 1950
+Text Notes 8950 2150 0    50   ~ 0
+M2 Power
+$Comp
+L Device:R R?
+U 1 1 604608E9
+P 9550 1950
+AR Path="/604608E9" Ref="R?"  Part="1" 
+AR Path="/5FD98CA6/604608E9" Ref="R19"  Part="1" 
+F 0 "R19" V 9343 1950 50  0000 C CNN
+F 1 "56" V 9434 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9480 1950 50  0001 C CNN
+F 3 "~" H 9550 1950 50  0001 C CNN
+	1    9550 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 1950 9700 1950
+Text Label 8850 1950 2    50   ~ 0
+M_GND
+Text Label 9800 1950 0    50   ~ 0
+M2_3V3
 $EndSCHEMATC
