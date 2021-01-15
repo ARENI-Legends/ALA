@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 11
+Sheet 3 11
 Title "Driver Moteur"
 Date "2021-01-14"
 Rev "0.0.1"
@@ -104,12 +104,6 @@ Wire Wire Line
 	5750 4350 5750 4300
 Wire Wire Line
 	5950 4300 5950 4350
-Wire Wire Line
-	5950 4350 6300 4350
-Wire Wire Line
-	6300 4350 6300 4000
-Wire Wire Line
-	6300 4000 6250 4000
 $Comp
 L Device:C C?
 U 1 1 60106610
@@ -140,7 +134,7 @@ AR Path="/5FD98CA6/601029E8/60106620" Ref="C3"  Part="1"
 AR Path="/5FD98CA6/60458F83/60106620" Ref="C5"  Part="1" 
 AR Path="/5FD98CA6/604FEE4D/60106620" Ref="C9"  Part="1" 
 AR Path="/5FD98CA6/6050B299/60106620" Ref="C13"  Part="1" 
-F 0 "C3" H 5915 5096 50  0000 L CNN
+F 0 "C5" H 5915 5096 50  0000 L CNN
 F 1 "1u" H 5915 5005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5838 4900 50  0001 C CNN
 F 3 "~" H 5800 5050 50  0001 C CNN
@@ -158,50 +152,47 @@ Bypass for isolation amp
 $Comp
 L Device:R_Small R?
 U 1 1 60106631
-P 6950 3800
+P 8050 3900
 AR Path="/5FD98CA6/60106631" Ref="R?"  Part="1" 
 AR Path="/5FD98CA6/601029E8/60106631" Ref="R22"  Part="1" 
 AR Path="/5FD98CA6/60458F83/60106631" Ref="R31"  Part="1" 
 AR Path="/5FD98CA6/604FEE4D/60106631" Ref="R37"  Part="1" 
 AR Path="/5FD98CA6/6050B299/60106631" Ref="R43"  Part="1" 
-F 0 "R22" V 6754 3800 50  0000 C CNN
-F 1 "R_Small" V 6845 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6950 3800 50  0001 C CNN
-F 3 "~" H 6950 3800 50  0001 C CNN
-	1    6950 3800
+F 0 "R31" V 7854 3900 50  0000 C CNN
+F 1 "R_Small" V 7945 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 8050 3900 50  0001 C CNN
+F 3 "~" H 8050 3900 50  0001 C CNN
+	1    8050 3900
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 60106637
-P 7100 3950
+P 8200 4050
 AR Path="/5FD98CA6/60106637" Ref="C?"  Part="1" 
 AR Path="/5FD98CA6/601029E8/60106637" Ref="C2"  Part="1" 
 AR Path="/5FD98CA6/60458F83/60106637" Ref="C8"  Part="1" 
 AR Path="/5FD98CA6/604FEE4D/60106637" Ref="C12"  Part="1" 
 AR Path="/5FD98CA6/6050B299/60106637" Ref="C16"  Part="1" 
-F 0 "C2" H 7192 3996 50  0000 L CNN
-F 1 "C_Small" H 7192 3905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7100 3950 50  0001 C CNN
-F 3 "~" H 7100 3950 50  0001 C CNN
-	1    7100 3950
+F 0 "C8" H 8292 4096 50  0000 L CNN
+F 1 "C_Small" H 8292 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8200 4050 50  0001 C CNN
+F 3 "~" H 8200 4050 50  0001 C CNN
+	1    8200 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 3800 6850 3800
+	7350 3900 7700 3900
 Wire Wire Line
-	7050 3800 7100 3800
+	8150 3900 8200 3900
 Wire Wire Line
-	7100 3800 7100 3850
+	8200 3900 8200 3950
 Wire Wire Line
-	7100 3800 7200 3800
-Connection ~ 7100 3800
+	8200 3900 8300 3900
+Connection ~ 8200 3900
 Wire Wire Line
-	7100 4050 7100 4350
-Wire Wire Line
-	7100 4350 6300 4350
-Connection ~ 6300 4350
-Text HLabel 7200 3800 2    50   Output ~ 0
+	8200 4150 8200 4350
+Text HLabel 8300 3900 2    50   Output ~ 0
 CurrentSense
 $Comp
 L Device:R_Small R?
@@ -400,12 +391,8 @@ Wire Wire Line
 	3600 1200 3500 1200
 Text HLabel 6000 4500 2    50   Input ~ 0
 Command_GND
-Text HLabel 6000 3450 2    50   Input ~ 0
+Text HLabel 5900 3350 0    50   Input ~ 0
 Command_VCC
-Wire Wire Line
-	6000 3450 5950 3450
-Wire Wire Line
-	5950 3450 5950 3500
 Connection ~ 5950 4350
 Wire Wire Line
 	5950 4500 6000 4500
@@ -490,11 +477,11 @@ Wire Notes Line
 Wire Notes Line
 	7700 850  4800 850 
 Wire Notes Line
-	5100 4700 7800 4700
+	5100 4700 8900 4700
 Wire Notes Line
-	7800 4700 7800 3300
+	8900 4700 8900 3300
 Wire Notes Line
-	7800 3300 5100 3300
+	8900 3300 5100 3300
 Wire Notes Line
 	5100 5500 6650 5500
 Wire Notes Line
@@ -634,4 +621,52 @@ Wire Wire Line
 	6750 2250 6800 2250
 Text Label 5000 2950 0    50   ~ 0
 CS
+$Comp
+L Amplifier_Difference:AD8276 U6
+U 1 1 603F010B
+P 7050 3900
+AR Path="/5FD98CA6/60458F83/603F010B" Ref="U6"  Part="1" 
+AR Path="/5FD98CA6/604FEE4D/603F010B" Ref="U7"  Part="1" 
+AR Path="/5FD98CA6/6050B299/603F010B" Ref="U8"  Part="1" 
+F 0 "U6" H 7394 3946 50  0000 L CNN
+F 1 "AD8276" H 7394 3855 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7050 3900 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8276_8277.pdf" H 7050 3900 50  0001 C CNN
+	1    7050 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4350 6950 4350
+Wire Wire Line
+	6750 4000 6250 4000
+Wire Wire Line
+	6250 3800 6750 3800
+Wire Wire Line
+	6950 4200 6950 4350
+Connection ~ 6950 4350
+Wire Wire Line
+	6950 4350 7050 4350
+Wire Wire Line
+	5950 3350 5900 3350
+Wire Wire Line
+	5950 3350 5950 3500
+Wire Wire Line
+	5950 3350 6950 3350
+Wire Wire Line
+	6950 3350 6950 3600
+Connection ~ 5950 3350
+Wire Wire Line
+	7700 3900 7700 3550
+Wire Wire Line
+	7700 3550 7050 3550
+Wire Wire Line
+	7050 3550 7050 3600
+Connection ~ 7700 3900
+Wire Wire Line
+	7700 3900 7950 3900
+Wire Wire Line
+	7050 4200 7050 4350
+Wire Wire Line
+	7050 4350 8200 4350
+Connection ~ 7050 4350
 $EndSCHEMATC
