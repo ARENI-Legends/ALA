@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
+Sheet 1 11
 Title "ALA"
 Date "2021-01-14"
 Rev "0.0.1"
@@ -170,9 +170,6 @@ F11 "DIR1" I R 8650 2050 50
 F12 "CS2" O R 8650 2250 50 
 F13 "PWM2" I R 8650 2350 50 
 F14 "DIR2" I R 8650 2450 50 
-F15 "CS3" O L 7650 2050 50 
-F16 "PWM3" I L 7650 2150 50 
-F17 "DIR3" I L 7650 2250 50 
 $EndSheet
 $Comp
 L power:GNDS #PWR0104
@@ -204,22 +201,10 @@ Wire Wire Line
 	7650 1750 7550 1750
 Wire Wire Line
 	7650 1850 7550 1850
-Wire Wire Line
-	7650 2050 7550 2050
-Wire Wire Line
-	7550 2150 7650 2150
-Wire Wire Line
-	7550 2250 7650 2250
 Text Label 7550 1750 2    50   ~ 0
 FLT
 Text Label 7550 1850 2    50   ~ 0
 SLP
-Text Label 7550 2050 2    50   ~ 0
-CS3
-Text Label 7550 2150 2    50   ~ 0
-PWM3
-Text Label 7550 2250 2    50   ~ 0
-DIR3
 Wire Wire Line
 	8650 1450 8750 1450
 Wire Wire Line
@@ -268,8 +253,6 @@ Text Label 2100 2850 2    50   ~ 0
 PWM2
 Wire Wire Line
 	2250 2650 2100 2650
-Text Label 2100 3050 2    50   ~ 0
-PWM3
 Wire Wire Line
 	2250 2750 2100 2750
 Text Label 2100 2450 2    50   ~ 0
@@ -278,16 +261,10 @@ Text Label 2100 2750 2    50   ~ 0
 DIR1
 Text Label 2100 2950 2    50   ~ 0
 DIR2
-Text Label 2100 3650 2    50   ~ 0
-DIR3
 Wire Wire Line
 	2100 2850 2250 2850
 Wire Wire Line
 	2100 2950 2250 2950
-Wire Wire Line
-	2100 3050 2250 3050
-Wire Wire Line
-	2100 3650 2250 3650
 NoConn ~ 4450 1750
 Wire Wire Line
 	2100 3850 2250 3850

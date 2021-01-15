@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 12
+Sheet 2 11
 Title "Assemblage Drivers Moteurs"
 Date "2021-01-14"
 Rev "0.0.1"
@@ -171,20 +171,7 @@ F 3 "~" H 5700 3700 50  0001 C CNN
 	1    5700 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J11
-U 1 1 600F7E32
-P 6500 4900
-F 0 "J11" V 6500 5000 50  0000 L CNN
-F 1 "Conn_01x02" V 6600 4650 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 6500 4900 50  0001 C CNN
-F 3 "~" H 6500 4900 50  0001 C CNN
-	1    6500 4900
-	1    0    0    -1  
-$EndComp
 Text Label 5400 3700 2    50   ~ 0
-M_GND
-Text Label 6250 4650 0    50   ~ 0
 M_GND
 Text Label 5050 3750 2    50   ~ 0
 M0_VIN
@@ -192,12 +179,8 @@ Text Label 5050 3850 2    50   ~ 0
 M1_VIN
 Text Label 4700 4700 2    50   ~ 0
 M2_VIN
-Text Label 6150 4800 2    50   ~ 0
-M3_VIN
 Wire Wire Line
 	5400 3700 5500 3700
-Wire Wire Line
-	6250 4900 6300 4900
 Wire Wire Line
 	5050 3850 5100 3850
 Wire Wire Line
@@ -209,8 +192,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 3750 5050 3750
 Connection ~ 5100 3800
-Wire Wire Line
-	6150 4500 6050 4500
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 6029ED6E
@@ -222,19 +203,6 @@ F 3 "~" H 4950 4500 50  0001 C CNN
 	1    4950 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 603A5868
-P 5900 4500
-F 0 "JP2" H 5900 4275 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 5900 4366 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5900 4500 50  0001 C CNN
-F 3 "~" H 5900 4500 50  0001 C CNN
-	1    5900 4500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5750 4500 5400 4500
 Wire Wire Line
 	5400 4500 5400 3800
 Connection ~ 5400 3800
@@ -242,7 +210,6 @@ Wire Wire Line
 	5400 3800 5500 3800
 Wire Wire Line
 	5400 4500 5100 4500
-Connection ~ 5400 4500
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 60524D45
@@ -281,20 +248,20 @@ Wire Wire Line
 Wire Wire Line
 	2800 1250 2900 1250
 $Sheet
-S 1800 1900 1000 800 
+S 1800 850  1000 800 
 U 60458F83
-F0 "Driver 1" 50
+F0 "Driver 0" 50
 F1 "Driver.sch" 50
-F2 "CurrentSense" O R 2800 2300 50 
-F3 "PWM" I R 2800 2000 50 
-F4 "DIR" I R 2800 2100 50 
-F5 "Command_GND" I L 1800 2000 50 
-F6 "Command_VCC" I L 1800 2100 50 
-F7 "M_GND" I L 1800 2300 50 
-F8 "M_3V3" O L 1800 2400 50 
-F9 "M_SLP" I R 2800 2500 50 
-F10 "M_FLT" O R 2800 2600 50 
-F11 "M_VIN" I L 1800 2500 50 
+F2 "CurrentSense" O R 2800 1250 50 
+F3 "PWM" I R 2800 950 50 
+F4 "DIR" I R 2800 1050 50 
+F5 "Command_GND" I L 1800 950 50 
+F6 "Command_VCC" I L 1800 1050 50 
+F7 "M_GND" I L 1800 1250 50 
+F8 "M_3V3" O L 1800 1350 50 
+F9 "M_SLP" I R 2800 1450 50 
+F10 "M_FLT" O R 2800 1550 50 
+F11 "M_VIN" I L 1800 1450 50 
 $EndSheet
 Text HLabel 1700 2100 0    50   Input ~ 0
 Command_VCC
@@ -321,20 +288,20 @@ PWM2
 Text HLabel 5400 1050 2    50   Input ~ 0
 DIR2
 $Sheet
-S 4300 850  1000 800 
+S 1800 1900 1000 800 
 U 604FEE4D
-F0 "Driver 2" 50
+F0 "Driver 1" 50
 F1 "Driver.sch" 50
-F2 "CurrentSense" O R 5300 1250 50 
-F3 "PWM" I R 5300 950 50 
-F4 "DIR" I R 5300 1050 50 
-F5 "Command_GND" I L 4300 950 50 
-F6 "Command_VCC" I L 4300 1050 50 
-F7 "M_GND" I L 4300 1250 50 
-F8 "M_3V3" O L 4300 1350 50 
-F9 "M_SLP" I R 5300 1450 50 
-F10 "M_FLT" O R 5300 1550 50 
-F11 "M_VIN" I L 4300 1450 50 
+F2 "CurrentSense" O R 2800 2300 50 
+F3 "PWM" I R 2800 2000 50 
+F4 "DIR" I R 2800 2100 50 
+F5 "Command_GND" I L 1800 2000 50 
+F6 "Command_VCC" I L 1800 2100 50 
+F7 "M_GND" I L 1800 2300 50 
+F8 "M_3V3" O L 1800 2400 50 
+F9 "M_SLP" I R 2800 2500 50 
+F10 "M_FLT" O R 2800 2600 50 
+F11 "M_VIN" I L 1800 2500 50 
 $EndSheet
 Text HLabel 4200 1050 0    50   Input ~ 0
 Command_VCC
@@ -354,46 +321,22 @@ Wire Wire Line
 	5300 1050 5400 1050
 Wire Wire Line
 	5300 1250 5400 1250
-Text HLabel 5400 2300 2    50   Output ~ 0
-CS3
-Text HLabel 5400 2000 2    50   Input ~ 0
-PWM3
-Text HLabel 5400 2100 2    50   Input ~ 0
-DIR3
 $Sheet
-S 4300 1900 1000 800 
+S 4300 850  1000 800 
 U 6050B299
-F0 "Driver 3" 50
+F0 "Driver 2" 50
 F1 "Driver.sch" 50
-F2 "CurrentSense" O R 5300 2300 50 
-F3 "PWM" I R 5300 2000 50 
-F4 "DIR" I R 5300 2100 50 
-F5 "Command_GND" I L 4300 2000 50 
-F6 "Command_VCC" I L 4300 2100 50 
-F7 "M_GND" I L 4300 2300 50 
-F8 "M_3V3" O L 4300 2400 50 
-F9 "M_SLP" I R 5300 2500 50 
-F10 "M_FLT" O R 5300 2600 50 
-F11 "M_VIN" I L 4300 2500 50 
+F2 "CurrentSense" O R 5300 1250 50 
+F3 "PWM" I R 5300 950 50 
+F4 "DIR" I R 5300 1050 50 
+F5 "Command_GND" I L 4300 950 50 
+F6 "Command_VCC" I L 4300 1050 50 
+F7 "M_GND" I L 4300 1250 50 
+F8 "M_3V3" O L 4300 1350 50 
+F9 "M_SLP" I R 5300 1450 50 
+F10 "M_FLT" O R 5300 1550 50 
+F11 "M_VIN" I L 4300 1450 50 
 $EndSheet
-Text HLabel 4200 2100 0    50   Input ~ 0
-Command_VCC
-Text HLabel 4200 2000 0    50   Input ~ 0
-Command_GND
-Text Label 4200 2300 2    50   ~ 0
-M_GND
-Wire Wire Line
-	4200 2000 4300 2000
-Wire Wire Line
-	4200 2100 4300 2100
-Wire Wire Line
-	4200 2300 4300 2300
-Wire Wire Line
-	5300 2000 5400 2000
-Wire Wire Line
-	5300 2100 5400 2100
-Wire Wire Line
-	5300 2300 5400 2300
 Text HLabel 2600 3850 2    50   Input ~ 0
 Command_VCC
 Text HLabel 1850 5150 0    50   Input ~ 0
@@ -404,14 +347,8 @@ Wire Wire Line
 	4700 4900 4700 4500
 Wire Wire Line
 	4700 4500 4800 4500
-Wire Wire Line
-	6250 4650 6250 4900
-Wire Wire Line
-	6150 4500 6150 5000
-Wire Wire Line
-	6150 5000 6300 5000
 Text Notes 4750 5350 0    50   ~ 0
-M0 and M1 always have the same voltage\nM2 voltage is selectable via JP1\nM3 voltage is selectable via JP2
+M0 and M1 always have the same voltage\nM2 voltage is selectable via JP1
 Wire Notes Line
 	4100 3500 4100 5450
 Wire Notes Line
@@ -420,22 +357,6 @@ Wire Notes Line
 	6750 5450 6750 3500
 Wire Notes Line
 	6750 3500 4100 3500
-$Sheet
-S 1800 850  1000 800 
-U 601029E8
-F0 "Driver 0" 50
-F1 "Driver.sch" 50
-F2 "CurrentSense" O R 2800 1250 50 
-F3 "PWM" I R 2800 950 50 
-F4 "DIR" I R 2800 1050 50 
-F5 "Command_GND" I L 1800 950 50 
-F6 "Command_VCC" I L 1800 1050 50 
-F7 "M_GND" I L 1800 1250 50 
-F8 "M_3V3" O L 1800 1350 50 
-F9 "M_SLP" I R 2800 1450 50 
-F10 "M_FLT" O R 2800 1550 50 
-F11 "M_VIN" I L 1800 1450 50 
-$EndSheet
 Text Label 2900 1550 0    50   ~ 0
 M_FLT
 Text Label 2900 1450 0    50   ~ 0
@@ -460,14 +381,6 @@ Wire Wire Line
 	5300 1450 5400 1450
 Wire Wire Line
 	5300 1550 5400 1550
-Text Label 5400 2600 0    50   ~ 0
-M_FLT
-Text Label 5400 2500 0    50   ~ 0
-M_SLP
-Wire Wire Line
-	5300 2500 5400 2500
-Wire Wire Line
-	5300 2600 5400 2600
 $Comp
 L Device:LED D?
 U 1 1 6005D4C9
@@ -510,8 +423,6 @@ Text Label 7450 4150 2    50   ~ 0
 M_GND
 Text Label 7450 4250 2    50   ~ 0
 M0_VIN
-Text Label 7450 4450 2    50   ~ 0
-M3_VIN
 Text Label 7450 4350 2    50   ~ 0
 M2_VIN
 $Comp
@@ -547,25 +458,12 @@ F 3 "~" H 7600 4350 50  0001 C CNN
 	1    7600 4350
 	0    1    1    0   
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG0105
-U 1 1 600F2D04
-P 7600 4450
-F 0 "#FLG0105" H 7600 4525 50  0001 C CNN
-F 1 "PWR_FLAG" V 7600 4578 50  0000 L CNN
-F 2 "" H 7600 4450 50  0001 C CNN
-F 3 "~" H 7600 4450 50  0001 C CNN
-	1    7600 4450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7450 4150 7600 4150
 Wire Wire Line
 	7600 4250 7450 4250
 Wire Wire Line
 	7450 4350 7600 4350
-Wire Wire Line
-	7600 4450 7450 4450
 Text Label 1700 1450 2    50   ~ 0
 M0_VIN
 Wire Wire Line
@@ -578,10 +476,6 @@ Text Label 4200 1450 2    50   ~ 0
 M2_VIN
 Wire Wire Line
 	4200 1450 4300 1450
-Text Label 4200 2500 2    50   ~ 0
-M3_VIN
-Wire Wire Line
-	4200 2500 4300 2500
 $Comp
 L Device:LED D?
 U 1 1 6012EA9A
