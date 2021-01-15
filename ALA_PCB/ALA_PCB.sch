@@ -170,6 +170,8 @@ F11 "DIR1" I R 8650 2050 50
 F12 "CS2" O R 8650 2250 50 
 F13 "PWM2" I R 8650 2350 50 
 F14 "DIR2" I R 8650 2450 50 
+F15 "VoltageSense0" O L 7650 2150 50 
+F16 "VoltageSense2" O L 7650 2250 50 
 $EndSheet
 $Comp
 L power:GNDS #PWR0104
@@ -649,4 +651,20 @@ Text Label 3200 6200 0    50   ~ 0
 CAN_RX_1
 Text Label 3200 6100 0    50   ~ 0
 CAN_TX_1
+Wire Wire Line
+	7650 2150 7550 2150
+Wire Wire Line
+	7550 2250 7650 2250
+Text Label 7550 2150 2    50   ~ 0
+VS0
+Text Label 7550 2250 2    50   ~ 0
+VS2
+Wire Wire Line
+	4450 2350 4600 2350
+Wire Wire Line
+	4600 2250 4450 2250
+Text Label 4600 2350 0    50   ~ 0
+VS0
+Text Label 4600 2250 0    50   ~ 0
+VS2
 $EndSCHEMATC
