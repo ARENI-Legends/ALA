@@ -48,13 +48,11 @@ F 3 "~" H 7400 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6300 3350 0    50   ~ 0
-LOW
-Text Label 6300 3050 0    50   ~ 0
-HIGH
+CAN-
 Text Label 7100 3050 2    50   ~ 0
-LOW
+CAN-
 Text Label 7100 3150 2    50   ~ 0
-HIGH
+CAN+
 Wire Wire Line
 	7100 3150 7200 3150
 Wire Wire Line
@@ -79,9 +77,9 @@ F 3 "~" H 7400 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7100 3500 2    50   ~ 0
-LOW
+CAN-
 Text Label 7100 3600 2    50   ~ 0
-HIGH
+CAN+
 Wire Wire Line
 	7100 3600 7200 3600
 Wire Wire Line
@@ -229,4 +227,6 @@ Text Label 4450 2950 0    50   ~ 0
 C_TX
 Text Label 4450 3100 0    50   ~ 0
 C_RX
+Text Label 6300 3050 0    50   ~ 0
+CAN+
 $EndSCHEMATC
